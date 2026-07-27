@@ -15,6 +15,46 @@ if (toggle && links) {
   );
 }
 
+// Carruseles
+document.querySelectorAll('.carrusel').forEach(carrusel => {
+  const pista = carrusel.querySelector('.carrusel-pista');
+  const imgs = carrusel.querySelectorAll('.carrusel-img');
+  const dotsWrap = carrusel.querySelector('.carrusel-dots');
+  const ant = carrusel.querySelector('.carrusel-ant');
+  const sig = carrusel.querySelector('.carrusel-sig');
+  if (!imgs.length) return;
+
+  imgs.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carrusel-dot' + (i === 0 ? ' activo' : '');
+    dot.setAttribute('aria-label', 'Foto ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+
+  const dots = dotsWrap.querySelectorAll('.carrusel-dot');
+
+  function goTo(i) {
+    pista.scrollTo({ left: pista.offsetWidth * i, behavior: 'smooth' });
+  }
+
+  function syncDots() {
+    const i = Math.round(pista.scrollLeft / pista.offsetWidth);
+    dots.forEach((d, j) => d.classList.toggle('activo', j === i));
+  }
+
+  ant.addEventListener('click', () => {
+    const i = Math.round(pista.scrollLeft / pista.offsetWidth);
+    goTo(Math.max(0, i - 1));
+  });
+  sig.addEventListener('click', () => {
+    const i = Math.round(pista.scrollLeft / pista.offsetWidth);
+    goTo(Math.min(imgs.length - 1, i + 1));
+  });
+
+  pista.addEventListener('scroll', syncDots, { passive: true });
+});
+
 // Reveal on scroll (respeta prefers-reduced-motion vía CSS)
 const observer = new IntersectionObserver(
   entries => entries.forEach(e => {
