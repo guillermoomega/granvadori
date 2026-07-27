@@ -117,10 +117,8 @@ a:focus-visible, button:focus-visible {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background:
-    radial-gradient(ellipse at 50% 120%, rgba(181, 84, 30, 0.28), transparent 60%),
-    linear-gradient(180deg, var(--borravino-oscuro) 0%, var(--borravino) 100%);
-  color: var(--crudo);
+  background: var(--crudo);
+  color: var(--carbon);
   padding: 120px 24px 80px;
 }
 
@@ -128,7 +126,7 @@ a:focus-visible, button:focus-visible {
   font-size: 0.8rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--beige);
+  color: var(--oxido);
   margin-bottom: 22px;
 }
 
@@ -160,7 +158,7 @@ a:focus-visible, button:focus-visible {
   font-family: var(--display);
   font-style: italic;
   font-size: clamp(1.15rem, 2.6vw, 1.5rem);
-  color: var(--beige);
+  color: var(--borravino);
   max-width: 560px;
 }
 
@@ -169,7 +167,7 @@ a:focus-visible, button:focus-visible {
   font-size: 0.8rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(224, 217, 204, 0.75);
+  color: var(--plomo);
 }
 
 .hero-acciones {
@@ -199,10 +197,10 @@ a:focus-visible, button:focus-visible {
 .btn-primario:hover { background: #9c4718; }
 
 .btn-secundario {
-  border: 1px solid var(--beige);
-  color: var(--crudo);
+  border: 1px solid var(--borravino);
+  color: var(--borravino);
 }
-.btn-secundario:hover { background: rgba(224, 217, 204, 0.12); }
+.btn-secundario:hover { background: rgba(107, 39, 55, 0.08); }
 
 /* ---------- Secciones como "tiempos" ---------- */
 
@@ -532,15 +530,14 @@ a:focus-visible, button:focus-visible {
 }
 
 .hero-logo {
-  width: clamp(240px, 38vw, 420px);
+  width: clamp(180px, 28vw, 320px);
   height: auto;
   display: block;
-  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 860px) {
   .nav-logo { height: 32px; }
-  .hero-logo { width: clamp(200px, 72vw, 320px); }
+  .hero-logo { width: clamp(160px, 58vw, 240px); }
 }
 
 /* ---------- Reveal on scroll ---------- */
