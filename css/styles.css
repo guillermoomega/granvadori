@@ -509,6 +509,40 @@ a:focus-visible, button:focus-visible {
 .wsp-flotante:hover { transform: scale(1.06); text-decoration: none; }
 .wsp-flotante svg { width: 30px; height: 30px; fill: #fff; }
 
+/* ---------- Logo ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+.nav-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.hero-logo-wrap {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.hero-logo {
+  width: clamp(240px, 38vw, 420px);
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 860px) {
+  .nav-logo { height: 32px; }
+  .hero-logo { width: clamp(200px, 72vw, 320px); }
+}
+
 /* ---------- Reveal on scroll ---------- */
 
 .reveal {
