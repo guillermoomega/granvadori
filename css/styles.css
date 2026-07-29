@@ -51,6 +51,7 @@ a:focus-visible, button:focus-visible {
   z-index: 100;
   background: rgba(69, 24, 34, 0.96);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(224, 217, 204, 0.15);
 }
 
@@ -90,13 +91,13 @@ a:focus-visible, button:focus-visible {
 .nav-links a:hover { color: var(--crudo); text-decoration: none; }
 
 .nav-cta {
-  background: var(--oxido);
+  background: var(--borravino-oscuro);
   color: var(--blanco-humo) !important;
   padding: 9px 20px;
   border-radius: 2px;
   font-weight: 700;
 }
-.nav-cta:hover { background: #9c4718; }
+.nav-cta:hover { background: var(--carbon); }
 
 .nav-toggle {
   display: none;
@@ -191,10 +192,10 @@ a:focus-visible, button:focus-visible {
 .btn:hover { text-decoration: none; }
 
 .btn-primario {
-  background: var(--oxido);
+  background: var(--borravino);
   color: var(--blanco-humo);
 }
-.btn-primario:hover { background: #9c4718; }
+.btn-primario:hover { background: var(--borravino-oscuro); }
 
 .btn-secundario {
   border: 1px solid var(--borravino);
@@ -467,13 +468,13 @@ a:focus-visible, button:focus-visible {
   font-size: 0.85rem;
 }
 
-.footer-marca {
-  font-family: var(--display);
-  font-size: 1.4rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--crudo);
-  margin-bottom: 14px;
+.footer-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+  margin: 0 auto 14px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
 }
 
 .footer-links {
@@ -548,9 +549,6 @@ a:focus-visible, button:focus-visible {
   background: var(--beige);
 }
 
-.carrusel--amplio {
-  margin-bottom: 48px;
-}
 
 .carrusel-pista {
   display: flex;
@@ -570,9 +568,6 @@ a:focus-visible, button:focus-visible {
   scroll-snap-align: start;
 }
 
-.carrusel--amplio .carrusel-img {
-  aspect-ratio: 16/9;
-}
 
 .carrusel-btn {
   position: absolute;
