@@ -66,3 +66,15 @@ const observer = new IntersectionObserver(
   { threshold: 0.12 }
 );
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Tracking WhatsApp — GA4
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'contacto_whatsapp', {
+        event_category: 'engagement',
+        event_label: link.href
+      });
+    }
+  });
+});
