@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://granvadori.com.ar/sitemap.xml
