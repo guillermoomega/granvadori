@@ -163,6 +163,20 @@ a:focus-visible, button:focus-visible {
   max-width: 560px;
 }
 
+/* El h1 del hero reutiliza la clase .hero-sub para conservar el estilo visual;
+   se neutraliza .hero h1 (pensado para otro título) que tiene mayor especificidad. */
+.hero h1.hero-sub {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: normal;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  color: var(--borravino);
+  max-width: 560px;
+}
+
 .hero-datos {
   margin-top: 44px;
   font-size: 0.8rem;
