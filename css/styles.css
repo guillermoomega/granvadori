@@ -363,7 +363,7 @@ a:focus-visible, button:focus-visible {
 .vvs {
   background:
     linear-gradient(0deg, rgba(43, 26, 30, 0.55), rgba(43, 26, 30, 0.55)),
-    url('../img/quedate.jpg') center / cover no-repeat,
+    url('../img/quedate.JPG') center / cover no-repeat,
     var(--plomo);
   color: var(--crudo);
   text-align: center;
