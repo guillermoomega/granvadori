@@ -443,6 +443,7 @@ a:focus-visible, button:focus-visible {
   font-style: italic;
   font-family: var(--display);
   color: var(--plomo);
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
@@ -581,6 +582,29 @@ a:focus-visible, button:focus-visible {
   aspect-ratio: 4/3;
   object-fit: cover;
   scroll-snap-align: start;
+}
+
+.carrusel-item {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: start;
+}
+.carrusel-item .carrusel-img { scroll-snap-align: none; }
+
+.carrusel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 30px 16px 14px;
+  background: linear-gradient(to top, rgba(43, 26, 30, 0.85), rgba(43, 26, 30, 0));
+  color: #fff;
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 
