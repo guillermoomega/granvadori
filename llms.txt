@@ -13,6 +13,7 @@
 ## Páginas
 - [Home](https://www.granvadori.com.ar/): historia, propuesta gastronómica, reservas.
 - [Carta](https://www.granvadori.com.ar/carta.html): menú completo y carta de vinos.
+- [Agenda](https://www.granvadori.com.ar/agenda.html): música en vivo, cenas show y noches especiales, siempre con reserva previa. Próxima fecha: viernes 6 de noviembre, 21 hs, "Mulata, folclore con raíces afro", con Marina González y su banda; cena show $35.000 por persona (incluye derecho de espectáculo).
 
 ## Enlaces relacionados
 - [Villa Vadori Suites](https://www.villavadorisuites.ar/): alojamiento boutique asociado, en el mismo predio.
