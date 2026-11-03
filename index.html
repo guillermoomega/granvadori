@@ -213,27 +213,6 @@
         <div class="tiempo-rule" aria-hidden="true"></div>
       </div>
       <p class="lead reveal">Celebraciones, grupos y experiencias a medida, con las sierras como escenario.</p>
-
-      <article class="agenda-evento proximo-evento reveal" id="proximo-evento">
-        <div class="agenda-flyer">
-          <a href="img/eventos/mulata.png" target="_blank" rel="noopener" aria-label="Abrir la imagen completa del próximo evento">
-            <img src="img/eventos/mulata.png" width="1080" height="2460" loading="lazy"
-                 alt="Mulata, folclore con raíces afro. Marina González y su banda en vivo, viernes 6 de noviembre a las 21 horas, en Gran Vadori. Solo con reserva previa.">
-          </a>
-        </div>
-        <div class="agenda-detalle">
-          <p class="agenda-fecha">Viernes 6 de noviembre · 21 hs</p>
-          <h3>Mulata</h3>
-          <p class="agenda-sub">Folclore con raíces afro</p>
-          <p class="agenda-descripcion">Marina González y su banda presentan una noche de música en vivo con el folclore argentino desde sus raíces africanas.</p>
-          <p class="agenda-precio"><strong>Cena show $35.000 por persona</strong></p>
-          <div class="agenda-acciones">
-            <a class="btn btn-primario" href="https://wa.me/5493516427600?text=Hola%2C%20quiero%20reservar%20para%20Mulata%20el%20viernes%206" target="_blank" rel="noopener">Reservar por WhatsApp</a>
-            <a class="btn btn-secundario" href="agenda.html">Ver la agenda</a>
-          </div>
-        </div>
-      </article>
-
       <div class="carrusel">
         <div class="carrusel-pista">
           <img src="img/eventos1.jpg" alt="Eventos — Gran Vadori" loading="lazy" class="carrusel-img">
@@ -260,6 +239,38 @@
           <p>Cenas maridadas y catas guiadas por nuestro sommelier, para grupos reducidos.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Quinto tiempo: Agenda (la tarjeta se actualiza desde Airtable, ver js/main.js) -->
+  <section class="seccion" id="agenda">
+    <div class="seccion-inner">
+      <div class="tiempo reveal">
+        <p class="tiempo-numero">Quinto tiempo</p>
+        <h2>Agenda</h2>
+        <div class="tiempo-rule" aria-hidden="true"></div>
+      </div>
+      <p class="lead reveal">Música en vivo, cenas show y noches especiales. Todas con reserva previa.</p>
+
+      <article class="agenda-evento reveal" id="proximo-evento">
+        <div class="agenda-flyer">
+          <a href="img/eventos/mulata.png" target="_blank" rel="noopener" aria-label="Abrir la imagen completa del próximo evento">
+            <img src="img/eventos/mulata.png" width="1080" height="2460" loading="lazy"
+                 alt="Mulata, folclore con raíces afro. Marina González y su banda en vivo, viernes 6 de noviembre a las 21 horas, en Gran Vadori. Solo con reserva previa.">
+          </a>
+        </div>
+        <div class="agenda-detalle">
+          <p class="agenda-fecha">Viernes 6 de noviembre · 21 hs</p>
+          <h3>Mulata</h3>
+          <p class="agenda-sub">Folclore con raíces afro</p>
+          <p class="agenda-descripcion">Marina González y su banda presentan una noche de música en vivo con el folclore argentino desde sus raíces africanas.</p>
+          <p class="agenda-precio"><strong>Cena show $35.000 por persona</strong></p>
+          <div class="agenda-acciones">
+            <a class="btn btn-primario" href="https://wa.me/5493516427600?text=Hola%2C%20quiero%20reservar%20para%20Mulata%20el%20viernes%206" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            <a class="btn btn-secundario" href="agenda.html">Ver la agenda completa</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -327,6 +338,6 @@
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.3 7L4 29l7.2-2.2c1.9 1 4 1.6 6.2 1.6h.6c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.3 1.3 1.3-4.1-.3-.4C5.6 19.2 5 17.1 5 15 5 9 9.9 4 16 4s11 5 11 11-4.9 10.7-11 10.7zm6-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
   </a>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

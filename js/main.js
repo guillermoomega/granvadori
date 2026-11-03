@@ -157,8 +157,9 @@ function inyectarJsonLd(eventos) {
 
   const home = document.querySelector('#proximo-evento');
   if (home) {
-    if (data.proximo) { pintarAgendaEvento(home, data.proximo); home.hidden = false; }
-    else home.hidden = true;
+    const seccionAgenda = home.closest('#agenda') || home;
+    if (data.proximo) { pintarAgendaEvento(home, data.proximo); seccionAgenda.hidden = false; }
+    else seccionAgenda.hidden = true;
   }
 
   const listaProximas = document.querySelector('[data-agenda="proximas"]');
