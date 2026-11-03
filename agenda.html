@@ -101,41 +101,67 @@
   <section class="agenda-lista" aria-labelledby="proximas">
     <h2 id="proximas">Próximas fechas</h2>
 
-    <article class="agenda-evento">
-      <div class="agenda-flyer">
-        <a href="img/eventos/mulata.png" target="_blank" rel="noopener" aria-label="Abrir la imagen completa de Mulata">
-          <img src="img/eventos/mulata.png" width="1080" height="2460" loading="lazy"
-               alt="Mulata, folclore con raíces afro. Marina González y su banda en vivo, viernes 6 de noviembre a las 21 horas, en Gran Vadori. Cena show $35.000 por persona. Solo con reserva previa.">
-        </a>
-      </div>
-      <div class="agenda-detalle">
-        <p class="agenda-fecha">Viernes 6 de noviembre · 21 hs</p>
-        <h3>Mulata</h3>
-        <p class="agenda-sub">Folclore con raíces afro</p>
-        <p>Marina González y su banda presentan una noche de música en vivo con el folclore argentino desde sus raíces africanas.</p>
-
-        <p class="agenda-precio"><strong>Cena show $35.000 por persona</strong><br>Incluye el derecho de espectáculo.</p>
-        <ul class="agenda-menu">
-          <li><strong>Entrada</strong>Bruschettas: caprese, de queso crema y majar de jamón crudo, y de mango y queso azul.</li>
-          <li><strong>Principal a elegir</strong>Pizza a la parrilla de dos variedades, o degustación de empanadas: criollas de marucha cortada a cuchillo, de humita, de morrones y queso, y de pollo, hongos y vegetales a la chapa.</li>
-          <li><strong>Postre a elegir</strong>Flan marmolado de dulce de leche, o panqueque con frutas fileteadas.</li>
-        </ul>
-        <p>También podés elegir de <a href="carta.html">la carta habitual de Gran Vadori</a> con un derecho de espectáculo de $10.000 por persona.</p>
-        <p class="agenda-aviso">Solo con reserva previa.</p>
-
-        <div class="agenda-acciones">
-          <a class="btn btn-primario" href="https://wa.me/5493516427600?text=Hola%2C%20quiero%20reservar%20para%20Mulata%20el%20viernes%206" target="_blank" rel="noopener">Reservar por WhatsApp</a>
-          <a class="btn btn-secundario" href="carta.html">Ver la carta</a>
+    <div data-agenda="proximas">
+      <article class="agenda-evento">
+        <div class="agenda-flyer">
+          <a href="img/eventos/mulata.png" target="_blank" rel="noopener" aria-label="Abrir la imagen completa de Mulata">
+            <img src="img/eventos/mulata.png" width="1080" height="2460" loading="lazy"
+                 alt="Mulata, folclore con raíces afro. Marina González y su banda en vivo, viernes 6 de noviembre a las 21 horas, en Gran Vadori. Cena show $35.000 por persona. Solo con reserva previa.">
+          </a>
         </div>
-      </div>
-    </article>
+        <div class="agenda-detalle">
+          <p class="agenda-fecha">Viernes 6 de noviembre · 21 hs</p>
+          <h3>Mulata</h3>
+          <p class="agenda-sub">Folclore con raíces afro</p>
+          <p class="agenda-descripcion">Marina González y su banda presentan una noche de música en vivo con el folclore argentino desde sus raíces africanas.</p>
+
+          <p class="agenda-precio"><strong>Cena show $35.000 por persona</strong><br>Incluye el derecho de espectáculo.</p>
+          <ul class="agenda-menu">
+            <li><strong>Entrada</strong>Bruschettas: caprese, de queso crema y majar de jamón crudo, y de mango y queso azul.</li>
+            <li><strong>Principal a elegir</strong>Pizza a la parrilla de dos variedades, o degustación de empanadas: criollas de marucha cortada a cuchillo, de humita, de morrones y queso, y de pollo, hongos y vegetales a la chapa.</li>
+            <li><strong>Postre a elegir</strong>Flan marmolado de dulce de leche, o panqueque con frutas fileteadas.</li>
+          </ul>
+          <p>También podés elegir de <a href="carta.html">la carta habitual de Gran Vadori</a> con un derecho de espectáculo de $10.000 por persona.</p>
+          <p class="agenda-aviso">Solo con reserva previa.</p>
+
+          <div class="agenda-acciones">
+            <a class="btn btn-primario" href="https://wa.me/5493516427600?text=Hola%2C%20quiero%20reservar%20para%20Mulata%20el%20viernes%206" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            <a class="btn btn-secundario" href="carta.html">Ver la carta</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
 
   <!-- ============ ANTERIORES ============ -->
   <section class="agenda-lista agenda-anteriores" aria-labelledby="anteriores">
     <h2 id="anteriores">Anteriores</h2>
-    <p class="agenda-vacio">Cuando termine cada noche, la vas a encontrar acá.</p>
+    <div data-agenda="anteriores">
+      <p class="agenda-vacio">Cuando termine cada noche, la vas a encontrar acá.</p>
+    </div>
   </section>
+
+  <!-- Plantilla para eventos traídos dinámicamente desde Airtable (ver js/main.js) -->
+  <template id="tpl-agenda-evento">
+    <article class="agenda-evento">
+      <div class="agenda-flyer">
+        <a target="_blank" rel="noopener">
+          <img loading="lazy">
+        </a>
+      </div>
+      <div class="agenda-detalle">
+        <p class="agenda-fecha"></p>
+        <h3></h3>
+        <p class="agenda-sub"></p>
+        <p class="agenda-descripcion"></p>
+        <p class="agenda-precio"><strong></strong></p>
+        <p class="agenda-aviso">Solo con reserva previa.</p>
+        <div class="agenda-acciones">
+          <a class="btn btn-primario" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  </template>
 
   <section class="carta-seccion">
     <p class="carta-nota">¿Tenés un evento propio?</p>
